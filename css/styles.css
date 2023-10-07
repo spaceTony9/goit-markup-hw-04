@@ -211,11 +211,14 @@ img {
 
 .section-business-solutions {
     background-color: #2E2F42; ;
+    max-width: 1440px;
+    margin: 0 auto;
     height: 600px;
     padding: 188px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpeg);
     background-repeat: no-repeat;
-    background-size: 1440px;
+    background-size: cover;
+    background-position: center;
 }
 
 .container-business-solutins {
@@ -249,6 +252,9 @@ img {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     min-width: 169px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -295,21 +301,19 @@ img {
 }
 
 .section-valuest-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 112px;
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
     background: var(--CLOUD, #F4F4FD);
-    margin-bottom: 6px; 
+    margin-bottom: 8px; 
 }
 
 .section-values-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 64px;
-    height: 64px;
+   
 }
 
 .section-values-list-item-header {
@@ -364,7 +368,6 @@ img {
 }
 
 .section-team-list-item {
-    padding-bottom: 32px;
     width: calc((100% - 24px * 3) /4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -380,8 +383,7 @@ img {
 
 .container-team-list-item-person {
     text-align:center;
-    padding-top: 32px;
-    margin-bottom: 8px;
+    padding: 32px 0;
 }
 
 .section-team-list-item-name {
@@ -401,19 +403,23 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
-.team-list-item-social-links {}
 
 .team-list-item-social-list {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 24px;
 }
 
 .team-list-item-social-list-item {
-    position: relative;
+}
+
+.team-list-item-social-list-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -421,10 +427,7 @@ img {
 }
 
 .team-list-item-social-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
     width: 16px;
     height: 16px;
     fill: #F4F4FD;
