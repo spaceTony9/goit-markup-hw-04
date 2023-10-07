@@ -628,12 +628,11 @@ img {
 }
 
 .footer-list-icon {
-    width: 24px;
-    height: 24px;
     fill: #F4F4FD;
 }
 
-.footer-icon-list-link:hover {
+.footer-icon-list-link:hover, 
+.footer-icon-list-link:focus {
     background-color: var(--GREEN, #31D0AA);
     cursor: pointer;
 }
