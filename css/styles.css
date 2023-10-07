@@ -122,7 +122,7 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-navigation-list-item-link::after {
+.header-navigation-list-item-link-std::after {
     content: "";
     position: absolute;
     left: 0;
